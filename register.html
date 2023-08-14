@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration</title>
+	<script src="scripts/register.js"></script>
+	<link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+	<!-- Menu bar -->
+	<div class="menu">
+		<a class="menu-element1" href="index.html">Home</a>
+		<a class="menu-element2" href="register.html">Register</a>
+	</div>
+	<!-- end of menu bar -->
+	<div class="body">
+		<p class="topic">Registration</p>
+		<!-- Registration form -->
+		<form class="register-questions">
+			<div class="question">
+				<label class="input-label" for="company-name">Company Name</label>
+				<input class="input-field" type="text" id="company-name" placeholder="Company Name" required/>
+			</div>
+			<div class="question">
+				<label class="input-label" for="booth-size">Booth Size</label>
+				<select class="input-field" id="booth-size" required>
+					<option value="10" selected>10x10</option>
+					<option value="15">10x15</option>
+				</select>
+			</div>
+			<div class="question">
+				<label class="input-label" for="table">Require table?</label>
+				<input class="input-field" type="checkbox" id="table" value="table" />
+			</div>
+			<div class="question">
+				<label class="input-label" for="chair-num">Number of chairs</label>
+				<input class="input-field" type="number" id="chair-num" min="0" max="10" value="0" required/>
+			</div>
+			<div class="question">
+				<label class="input-label" for="contact-name">Contact Name</label>
+				<input class="input-field" type="text" id="contact-name" placeholder="Contact Name" required/>
+			</div>
+			<div class="question">
+				<label class="input-label" for="contact-tel">Contact Tel</label>
+				<input class="input-field" type="tel" id="contact-tel" placeholder="Contact Tel" required/>
+			</div>
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</div>
+	<!-- end of registration form -->
+
+	<!-- footer -->
+	<div class="footer">
+		<p>Created by Phumipat C. (6432133721)</p>
+	</div>
+	<!-- end of footer -->
+</body>
+</html>

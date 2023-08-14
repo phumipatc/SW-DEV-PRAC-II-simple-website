@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Elsie");
+
+@import "common.css";
+
+/* class topic: big text align center with big background */
+.topic {
+	background: -webkit-linear-gradient(left, var(--color-black), var(--color-grey));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: "Elsie", sans-serif;
+	font-size: min(25vw,35vh);
+	text-align: center;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.subtopic {
+	font-family: "Elsie", sans-serif;
+	font-size: 70%;
+	text-align: center;
+}
+
+.description {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	
+}
+
+.descript-element1 {
+	font-size: 48px;
+	font-family: 'Elsie';
+	color: var(--color-grey);
+	margin-bottom: 2vh;
+}
+
+.descript-element2 {
+	font-size: 20px;
+	margin-left: 1vw;
+	margin-bottom: 2vh;
+}
+
+/* class products: centered 3 columns table */
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	width: 100%;
+}
+
+/* class product: a product contain image and text*/
+.product {
+	margin: 5px;
+	width: 25%;
+}
+
+.sq-img {
+	width: 100%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	border-radius: 15%;
+	margin-bottom: 2vh;
+}
+
+.product-label {
+	font-family: "Elsie", sans-serif;
+	font-size: 20px;
+	color: var(--color-grey);
+	text-align: center;
+}
+
+.product-description {
+	text-align: justify;
+	text-justify: auto;
+}

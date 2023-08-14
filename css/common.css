@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Elsie");
+
+/* global variables */
+:root {
+	--color-orange: #eeb902;
+	--color-orange-red: #f45d01;
+	--color-black: #000000;
+	--color-grey: #474647;
+	background: var(--color-orange);
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-top: 6vh;
+	margin-bottom: 6vh;
+}
+
+/* global */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* class menu: always-show menu bar with right text align */
+.menu {
+	text-align: right;
+	padding: 20px 10px;
+}
+
+/* class menu-element: each has padding to each other elements */
+.menu-element1 {
+	padding: 0 10px;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: var(--color-black);
+	float: left;
+}
+
+.menu-element2 {
+	padding: 0 10px;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: var(--color-black);
+	float: right;
+}
+
+
+/* class footer */
+.footer {
+	font-family: sans-serif;
+	font-size: 14px;
+	padding: 20px 0;
+	text-align: center;
+	margin-top: 5vh;
+	color: var(--color-grey);
+}
