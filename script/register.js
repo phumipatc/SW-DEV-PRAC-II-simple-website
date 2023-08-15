@@ -9,12 +9,12 @@ function validateForm() {
 	var contactTel = document.forms["register"]["contact-tel"].value;
 
 	// log the values
-	console.log("companyName: " + companyName);
-	console.log("boothSize: " + boothSize);
-	console.log("table: " + table);
-	console.log("chairNum: " + chairNum);
-	console.log("contactName: " + contactName);
-	console.log("contactTel: " + contactTel);
+	// console.log("companyName: " + companyName);
+	// console.log("boothSize: " + boothSize);
+	// console.log("table: " + table);
+	// console.log("chairNum: " + chairNum);
+	// console.log("contactName: " + contactName);
+	// console.log("contactTel: " + contactTel);
 
 	if(companyName == "") {
 		alert("Please enter company name");
