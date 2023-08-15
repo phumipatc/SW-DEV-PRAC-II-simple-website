@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Registration</title>
-	<script src="scripts/register.js"></script>
 	<link rel="stylesheet" href="css/register.css">
+	<script src="script/register.js"></script>
 </head>
 <body>
 	<!-- Menu bar -->
@@ -16,35 +16,37 @@
 	<div class="body">
 		<p class="topic">Registration</p>
 		<!-- Registration form -->
-		<form class="register-questions">
+		<form class="register-questions" name="register">
 			<div class="question">
 				<label class="input-label" for="company-name">Company Name</label>
-				<input class="input-field" type="text" id="company-name" placeholder="Company Name" required/>
+				<input class="input-field" name="company-name" type="text" id="company-name" placeholder="Company Name"/>
 			</div>
 			<div class="question">
 				<label class="input-label" for="booth-size">Booth Size</label>
-				<select class="input-field" id="booth-size" required>
+				<select class="input-field" name="booth-size" id="booth-size">
 					<option value="10" selected>10x10</option>
 					<option value="15">10x15</option>
 				</select>
 			</div>
 			<div class="question">
 				<label class="input-label" for="table">Require table?</label>
-				<input class="input-field" type="checkbox" id="table" value="table" />
+				<input class="input-field" name="table" type="checkbox" id="table" value="table" />
 			</div>
 			<div class="question">
 				<label class="input-label" for="chair-num">Number of chairs</label>
-				<input class="input-field" type="number" id="chair-num" min="0" max="10" value="0" required/>
+				<input class="input-field" name="chair-num" type="number" id="chair-num" min="0" max="10" value="0"/>
 			</div>
 			<div class="question">
 				<label class="input-label" for="contact-name">Contact Name</label>
-				<input class="input-field" type="text" id="contact-name" placeholder="Contact Name" required/>
+				<input class="input-field" name="contact-name" type="text" id="contact-name" placeholder="Contact Name"/>
 			</div>
 			<div class="question">
 				<label class="input-label" for="contact-tel">Contact Tel</label>
-				<input class="input-field" type="tel" id="contact-tel" placeholder="Contact Tel" required/>
+				<input class="input-field" name="contact-tel" type="tel" id="contact-tel" placeholder="Contact Tel"/>
 			</div>
-			<button type="submit" id="submit">Submit</button>
+			<button type="button" id="submit" onclick="validateForm()">
+				Submit
+			</button>
 		</form>
 	</div>
 	<!-- end of registration form -->
